@@ -4,7 +4,7 @@ function App() {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/employees")
+    fetch("https://spring-demo-app.yellowisland-9c291f5a.eastus.azurecontainerapps.io/employees")
       .then((response) => response.json())
       .then((data) => setEmployees(data))
       .catch((error) => console.error(error));
